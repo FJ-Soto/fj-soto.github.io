@@ -23,19 +23,20 @@ body {
 #main {
     flex-direction: column;
     background-color: #181818;
-    margin-left: max(var(--profile-width), 350px);
+    margin-left: calc(var(--profile-width) + var(--margin-left));
     min-width: var(--content-min-width);
     line-height: 1.4rem;
+    padding-right: var(--margin-right);
 }
 
 #main #nav-bar {
     position: sticky;
     top: 0;
     overflow: hidden;
-    width: 100%;
     height: var(--nav-bar-height);
     display: flex;
     flex-direction: column;
+    border-left: 1px solid #303030;
 }
 
 #main #nav-bar ul {
@@ -44,12 +45,10 @@ body {
     align-items: center;
     list-style-type: none;
     height: 100%;
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-right);
 }
 
 #main #nav-bar ul li {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 
@@ -71,7 +70,6 @@ body {
 
 #main .content {
     padding-left: 3rem;
-    padding-right: 3rem;
     margin-top: 3rem;
 }
 
@@ -105,7 +103,7 @@ body {
 }
 
 .scrolled {
-    background: rgba(32, 32, 32, 0.85);
+    background: #181818;
 }
 
 #main .section {
@@ -114,7 +112,6 @@ body {
     margin-bottom: 4rem;
 
 }
-
 
 #main .right {
     text-align: right;

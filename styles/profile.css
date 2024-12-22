@@ -10,6 +10,7 @@
     font-optical-sizing: auto;
     position: fixed;
     width: var(--profile-width);
+    padding-left: var(--margin-left);
     min-width: var(--profile-width);
     overflow-y: auto;
 }
