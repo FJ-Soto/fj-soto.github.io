@@ -11,6 +11,7 @@
     position: fixed;
     width: var(--profile-width);
     min-width: var(--profile-width);
+    overflow-y: auto;
 }
 
 #profile .profile-photo {
@@ -67,11 +68,15 @@
     color: #cccccc;
 }
 
-#profile #resume {
-    position: absolute;
-    bottom: 2%;
-}
 
+#profile #resume {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: calc(100% - 4rem);
+    height: 100%;
+    margin-bottom: 10%;
+}
 
 #profile .resume-link {
     text-decoration: underline;
@@ -80,4 +85,9 @@
 
 #profile .secondary-text {
     color: #cccccc;
+}
+
+#profile h4 {
+    font-weight: normal;
+    font-size: 1rem;
 }

@@ -1,5 +1,5 @@
 :root {
-    --profile-width: 350px;
+    --profile-width: 400px;
     --content-min-width: 550px;
     --nav-bar-height: 3rem;
     --margin-right: 5%;
@@ -25,6 +25,7 @@ body {
     background-color: #181818;
     margin-left: max(var(--profile-width), 350px);
     min-width: var(--content-min-width);
+    line-height: 1.4rem;
 }
 
 #main #nav-bar {
@@ -35,7 +36,6 @@ body {
     height: var(--nav-bar-height);
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--content-padding-top);
 }
 
 #main #nav-bar ul {
@@ -70,8 +70,8 @@ body {
 }
 
 #main .content {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-top: 3rem;
 }
 
@@ -83,14 +83,39 @@ body {
 
 #main .content p {
     color: #cccccc;
-    line-height: 1.6;
+}
+
+#main .content table {
+    width: 100%;
+}
+
+#main ul li  {
+    margin: 1rem 0;
+}
+
+#main .aligned-list {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+#main .aligned-list li {
+    padding-left: 20px;
+    text-indent: -20px;
 }
 
 .scrolled {
-    background: rgba(32, 32, 32, 0.85); /* Light background with slight opacity */
+    background: rgba(32, 32, 32, 0.85);
 }
 
 #main .section {
-    scroll-margin-top: calc(var(--nav-bar-height) + var(--content-padding-top));
-    margin-bottom: 2rem;
+    scroll-margin-top: calc(var(--nav-bar-height) + 1rem);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+}
+
+
+#main .right {
+    text-align: right;
 }
