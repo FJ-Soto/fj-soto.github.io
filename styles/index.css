@@ -79,12 +79,17 @@ body {
     margin-bottom: 1rem;
 }
 
+#main .content h2 {
+    margin-bottom: .8rem;
+}
+
 #main .content p {
     color: #cccccc;
 }
 
 #main .content table {
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 #main ul li  {
