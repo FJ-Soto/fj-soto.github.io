@@ -1,0 +1,90 @@
+:root {
+    --profile-width: 400px;
+    --nav-bar-height: 50px;
+    box-sizing: content-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+}
+
+/* Right Section: main Area */
+#main {
+    flex-direction: column;
+    background-color: #181818;
+    margin-left: var(--profile-width);
+}
+
+#main #nav-bar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: var(--nav-bar-height);
+    display: flex;
+    flex-direction: column;
+}
+
+#main #nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    margin-right: 70px;
+}
+
+#main #nav-bar ul li {
+    margin-left: 50px;
+}
+
+
+
+#main #nav-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+#main #nav-bar a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+#main #nav-bar a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main .content {
+    margin: 25px 70px auto 70px;
+}
+
+#main .content h1 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#main .content p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+
+/* TESTING */
+.scrolled {
+    background: rgba(32, 32, 32, 0.9); /* Light background with slight opacity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+#main h1 {
+    scroll-margin-top: 110px;
+}
