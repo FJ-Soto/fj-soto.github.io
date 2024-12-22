@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Manifest for Web Apps -->
+    <link rel="manifest" href="favicon_io/manifest.json" crossorigin="use-credentials">
+
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/profile.css">
     <!-- google fonts -->
@@ -12,8 +15,19 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap">
 
-    <script  type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
     <title>Fernando Soto | Software Engineer</title>
+    <!-- Favicon for general browsers -->
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="favicon_io/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicon_io/favicon-32x32.png" type="image/png">
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+
+    <!-- Icons for Progressive Web Apps -->
+    <link rel="icon" sizes="192x192" href="favicon_io/android-chrome-192x192.png" type="image/png">
+    <link rel="icon" sizes="512x512" href="favicon_io/android-chrome-512x512.png" type="image/png">
 </head>
 
 <body>
@@ -22,37 +36,101 @@
         <div id="profile">
             <img src="images/ultramarathon_selfie.JPG" alt="A selfie of myself on my first ultramarathon."
                 class="profile-photo">
-            <h1>Fernando J. Soto</h1>
-            <h2 class="title">Software Engineer</h2>
-            <table class="contact-info">
+            <table id="personal-info">
                 <tbody>
                     <tr>
-                        <td>Email</td>
-                        <td><a href="mailto:fjsoto1199@gmail.com">fjsoto1199@gmail.com</a></td>
+                        <td colspan="2" class="name">
+                            <h1>Fernando J. Soto</h1>
+                        </td>
+
                     </tr>
                     <tr>
-                        <td>Phone</td>
-                        <td><a href="tel:+12243342827">(224) 334-2827</td>
+                        <td colspan="2" class="title">
+                            <h2>Software Engineer</h2>
+                        </td>
+
                     </tr>
                     <tr>
-                        <td>Location</td>
-                        <td>Chicago, IL</td>
+                        <td colspan="2" class="location">
+                            <h3>Chicago, IL</h3>
+                        </td>
+                </tbody>
+            </table>
+            <table id="contact-info">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="mailto:fjsoto1199@gmail.com">
+                                <img src="images/email.png" class="icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="mailto:fjsoto1199@gmail.com">
+                                fjsoto1199@gmail.com
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="tel:+12243342827">
+                                <img src="images/phone.png" class="icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="tel:+12243342827">
+                                (224) 334-2827
+                            </a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Github</td>
-                        <td><a href="https://github.com/fsoto-GH">github.com/fsoto-GH</a></td>
+                        <td>
+                            <a href="https://github.com/fsoto-GH">
+                                <img src="images/github.svg" class="icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://github.com/fsoto-GH">
+                                github.com/fsoto-GH
+                            </a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>LinkedIn</td>
-                        <td><a href="https://www.linkedin.com/in/fsoto-li">linkedin.com/in/fsoto-li</a></td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/fsoto-li">
+                                <img src="images/linkedIn.png" class="icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/fsoto-li">
+                                linkedin.com/in/fsoto-li
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.strava.com/athletes/fjsoto"><img src="images/strava.svg" class="icon"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.strava.com/athletes/fjsoto">
+                                strava.com/athletes/fjsoto
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table id="resume">
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="secondary-text">Download my <a href="files/ResumeU.pdf" target="_blank"
+                                    class="resume-link">Resume/CV</a>!</span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
-            <p class="bio">
-
-            </p>
-        </div>
-
+        </div>                    
 
         <!-- Right Section: Content Area -->
         <main id="main">
@@ -60,37 +138,27 @@
             <nav id="nav-bar">
                 <ul>
                     <li><a href="#welcome">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#technical-skills">Skills</a></li>
+                    <li><a href="#work-experience">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
             <div class="content">
-                <h1 id="welcome">👋 Welcome to My Portfolio</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat commodo ex, sed sagittis augue pulvinar id. Aliquam erat volutpat. Aliquam scelerisque a urna molestie eleifend. Duis in tincidunt felis, a suscipit ex. Nullam efficitur neque eget egestas tempus. In finibus molestie ex at imperdiet. Nullam sit amet nisi tortor. Fusce interdum est ac bibendum pretium.
-
-                    Nullam a venenatis sem. Praesent tempor dolor quis mattis fringilla. Mauris tristique a justo ut aliquet. Donec risus purus, mattis ac velit ac, fringilla sollicitudin quam. Pellentesque eu ultrices diam, ut luctus eros. Duis eleifend id nibh id vulputate. Suspendisse potenti. Nullam iaculis tristique efficitur. Nam sem urna, auctor ac nunc et, pulvinar rutrum urna. Donec congue egestas tortor, cursus aliquet nisi gravida ut.
-                    
-                    Nulla libero tortor, accumsan sit amet nunc ut, mattis ullamcorper ex. Ut sed ultrices mauris, sit amet venenatis velit. Donec sed auctor lacus, nec blandit nisi. Maecenas blandit nunc feugiat nulla sagittis ornare. Donec et ipsum turpis. Vestibulum efficitur tempor semper. Mauris faucibus purus ac maximus imperdiet. Maecenas non orci eu justo semper euismod vitae eu lorem. Nam nec tellus mauris. Morbi pellentesque scelerisque metus, sed laoreet justo fermentum id. Mauris pretium vehicula nisl, eget varius sem cursus nec.
-                    
-                    Donec ac feugiat ex. Suspendisse placerat ipsum ac viverra blandit. Nunc non velit maximus, volutpat nulla a, tempor sapien. Pellentesque eget laoreet arcu. Etiam et enim venenatis, egestas justo at, eleifend tellus. Curabitur eleifend libero est, sit amet commodo dolor lacinia et. Fusce hendrerit elit eu neque pulvinar, at faucibus nisi sollicitudin. Phasellus faucibus, erat in finibus tempus, lectus eros dictum est, vel posuere lacus est eu nisl. Pellentesque iaculis et orci eu ultricies. Nunc tempor ultrices maximus.
-                    
-                    Ut molestie ligula metus, sit amet dictum metus cursus vitae. Aliquam erat volutpat. Fusce sit amet velit auctor, aliquet justo sed, finibus odio. Duis eget risus massa. Pellentesque at diam auctor odio scelerisque vulputate. In sollicitudin ligula risus, tristique lacinia metus sollicitudin ut. Nulla scelerisque est vitae justo commodo venenatis. Cras a lorem sed dui feugiat vestibulum. Cras ut lobortis ipsum. Etiam porta vitae felis at eleifend. Fusce mollis sed purus ut pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed egestas volutpat metus, vel tristique turpis. Sed eu scelerisque quam. Phasellus ultricies laoreet justo et tempor.
-                    
-                    Maecenas augue urna, sodales quis quam sed, blandit sodales elit. Proin ac varius tellus, vitae facilisis ante. Aliquam fermentum ornare lectus sit amet lobortis. Vestibulum viverra eros quis eros laoreet commodo ut in elit. Morbi augue nisi, dignissim in convallis in, suscipit quis enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam imperdiet mauris eget luctus ultrices. Nunc luctus convallis enim, eu iaculis lacus volutpat quis. Pellentesque accumsan orci eu sapien faucibus, sit amet semper mi tincidunt. Curabitur hendrerit nulla sed ex mattis, eu pulvinar lorem vehicula. Donec non metus tempus, aliquam risus non, pellentesque turpis. Phasellus ornare, ipsum sed semper sodales, tellus odio semper libero, sed faucibus ligula orci non nulla.
-                    
-                    Phasellus turpis odio, efficitur vitae nunc id, accumsan tincidunt ipsum. In hac habitasse platea dictumst. Cras at dui nec odio lobortis ultricies non sed felis. Proin convallis eros lacinia quam consectetur dignissim. Maecenas vestibulum commodo nisl, vehicula egestas ligula hendrerit accumsan. Donec a facilisis velit, in vehicula sem. Maecenas vestibulum neque metus, in eleifend neque ullamcorper et. Cras pretium iaculis nisi, sed feugiat purus iaculis vitae. Nulla ante mauris, dignissim eu eros sit amet, gravida bibendum lectus. Donec ornare tortor at nulla elementum dignissim. Fusce vestibulum arcu ornare, ultrices lorem eget, semper nunc. Vivamus nec scelerisque felis. Vestibulum fermentum lorem a ultrices ultrices. Curabitur efficitur purus ac volutpat pretium.
-                    
-                    Nullam sem tortor, elementum non enim vitae, sodales fermentum mi. Nam sit amet eleifend orci. Nulla facilisi. Maecenas mollis orci sed tellus fringilla feugiat. Donec ornare lacus imperdiet ex maximus rhoncus. Phasellus interdum pharetra neque nec finibus. Integer non molestie eros, a eleifend odio. Ut vel lobortis velit. Aliquam erat volutpat. Donec feugiat ante a egestas tristique. Quisque sem felis, porttitor ut sem vehicula, euismod viverra magna. Ut at tortor turpis. Vestibulum fringilla, enim sed tincidunt ullamcorper, nulla justo posuere ipsum, ac pulvinar urna dui in odio. Nulla feugiat mollis velit, a tincidunt dui pharetra ac. Duis a quam a sem molestie dignissim et at enim.
-                    
-                    Vestibulum tempor ut est sit amet vulputate. Donec eget risus massa. Aliquam elementum nisi fringilla dolor vulputate malesuada. Ut placerat maximus sollicitudin. Nullam varius risus et mi tempor, at efficitur ex ornare. Nulla ut congue diam. Praesent laoreet quam eget feugiat mollis. Etiam magna dui, lobortis ut tincidunt eget, sagittis ultricies massa. Pellentesque ac lorem vel libero laoreet posuere. Vestibulum massa eros, scelerisque eget placerat id, imperdiet tincidunt dolor. Proin vestibulum interdum tortor ut elementum. Cras pulvinar, elit sodales pharetra blandit, mi eros euismod odio, nec sodales ex felis sit amet tellus. Mauris dictum massa velit, a lobortis ex pretium finibus. Nulla in dolor nec est mattis tincidunt vitae at risus. Mauris eget tincidunt lorem, fermentum porta erat.
-                    
-                    In purus nisl, scelerisque a tempus et, commodo in sapien. Nunc luctus tellus et urna commodo tincidunt. Donec sagittis, turpis ac cursus faucibus, urna nisi viverra lacus, sed cursus arcu arcu quis ipsum. Sed id quam leo. Praesent eget mauris ipsum. Nunc efficitur eros id mi ultrices, eu congue diam placerat. Suspendisse potenti.
-                    
-                    Quisque sit amet nulla sed sem tincidunt condimentum et eget urna. Mauris erat urna, euismod quis augue commodo, consectetur finibus mi. Fusce id nisi vel nulla posuere ullamcorper. In porttitor arcu vel lorem aliquet pellentesque. Vivamus eu purus mi. Vivamus congue sit amet sem ut vehicula. Nunc pellentesque non arcu vel imperdiet. Nam euismod nisi id mi semper, id viverra quam aliquet. Nulla sem enim, viverra nec lorem at, vestibulum efficitur ex. Suspendisse felis tellus, faucibus at ullamcorper eu, hendrerit in ante. Morbi eu nunc vitae ex ornare blandit id gravida nibh. Aliquam scelerisque sed est commodo posuere. Aenean luctus convallis magna a consequat. Proin gravida, quam vel pharetra laoreet, augue lacus tincidunt libero, non pharetra justo ante elementum orci. Duis sit amet lacinia erat.    
-                </p>
+                <div id="welcome" class="section">
+                    <h1>Welcome to My Portfolio 👋</h1>
+                </div>
+                <div id="technical-skills" class="section">
+                    <h1>Skills</h1>
+                </div>
+                <div id="work-experience" class="section">
+                    <h1>Experience</h1>
+                </div>
+                <div id="projects" class="section">
+                    <h1>Projects</h1>
+                </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>
