@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Manifest for Web Apps -->
     <link rel="manifest" href="favicon_io/manifest.json" crossorigin="use-credentials">
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/shared/content.css">
+    <link rel="stylesheet" href="styles/shared/profile.css">
+    <link rel="stylesheet" href="styles/index/index.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <script type="text/javascript" src="scripts/index.js"></script>
     <title>Fernando Soto | Software Engineer</title>
@@ -183,12 +185,7 @@
                             <tr>
                                 <td colspan="2">
                                     <ul class="aligned-list">
-                                        <li>Optimized the performance of a critical API endpoint, achieving a throughput
-                                            of 3,000 requests per second by leveraging
-                                            code profiling, schema analysis, and strategic business logic improvements.
-                                            Reduced SQL queries by 8x, resulting in a
-                                            7.5x reduction in P95 latency, significantly enhancing system responsiveness
-                                            and scalability.</li>
+                                        <li>Optimized the performance of a critical API endpoint, achieving a throughput of 3,000 requests per second—a 7.5x improvement over the previous threshold. This was accomplished through code profiling, schema analysis, and strategic business logic enhancements, reducing SQL queries by 8x and significantly improving system responsiveness and scalability.</li>
                                         <li>Migrated Selenium automation to Cypress, enhancing readability, reusability,
                                             and stability. This transition reduced
                                             flakiness and accelerated automation development time, improving overall
@@ -275,7 +272,17 @@
                                 <td>Personal Lending Tracker</td>
                             </tr>
                             <tr>
-                                <td>Full-Stack Application | Tech Stack: SQL, C#, RESTful API, React</td>
+                                <td>Full-Stack Application | SQL, C#, RESTful API, React</td>
+                            </tr>
+                            <tr>
+                                <td class="project-description">
+                                    The Personal Lending Tracker started as a simple database-driven program to manage
+                                    loans, people, and transactions—essentially a more dynamic version of Excel.
+                                    Over time, this project has evolved into a full-stack application with various
+                                    technologies and concepts integrated along the way.
+                                    I regularly use this application, and I have a few more ideas on what to develop
+                                    down the line.
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -286,17 +293,66 @@
                                         </li>
                                         <li>Designed and implemented a SQL database with stored procedures and triggers
                                             to manage loans, people, and
-                                            transactions, ensuring data consistency and integrity.</li>
+                                            transactions, ensuring data consistency and integrity.
+                                        </li>
                                         <li>Built a Windows Form application to improve usability, enabling intuitive
                                             tracking and management of loans, payments,
-                                            and transaction history.</li>
+                                            and transaction history.
+                                        </li>
                                         <li>Transitioned to an API-first approach, developing a RESTful API to expose
                                             data and support future integrations,
                                             following service layer and DAO design patterns.
                                         </li>
                                         <li>Created a React-based front end to provide a modern, interactive user
                                             interface, implementing pagination, error
-                                            handling, and responsive design.</li>
+                                            handling, and responsive design.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img class="project-image" src="images/accounting/sql_view.png"
+                        alt="An image of the initial, SQL-only, phase of my personal lending app.">
+                    <img class="project-image" src="images/accounting/app_view.png"
+                        alt="An image of the Windows Form application variation of my personal lending app.">
+                    <img class="project-image" src="images/accounting/web_view.png"
+                        alt="An image of the most recent iteration on my personal lending app, a React-based web application.">
+                    <!-- #endregion -->
+                    <!-- #region project #2 -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Gantt Chart Maker</td>
+                            </tr>
+                            <tr>
+                                <td>Windows Form Application | C#</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="aligned-list">
+                                        <li>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- #endregion -->
+                    <!-- #region project #3 -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Stock Checker</td>
+                            </tr>
+                            <tr>
+                                <td>Portable Application | Python, Tkinter</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="aligned-list">
+                                        <li>
+                                        </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -305,7 +361,8 @@
                     <!-- #endregion -->
                 </div>
             </div>
-        </main>
+    </div>
+    </main>
     </div>
 </body>
 
