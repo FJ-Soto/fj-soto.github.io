@@ -1,6 +1,7 @@
 .project-image {
-    width: 33%;
-    display: block;
+    width: max(40vw, 40vh);
+    border-radius: 15px;
+    border: 1px solid #b0b0b0;
 }
 
 .project-description {

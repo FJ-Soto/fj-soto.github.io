@@ -1,5 +1,5 @@
 /* Profile main */
-#profile {
+.profile-spacer {
     height: 100%;
     background-color: #202020;
     border-right: 1px solid #303030;
@@ -15,13 +15,18 @@
     overflow-y: auto;
 }
 
+#profile {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 #profile .profile-photo {
     margin-top: calc(var(--nav-bar-height) + var(--content-padding-top));
     border-radius: 10%;
 }
 
 #profile img, #profile table, #profile #headline {
-    width: calc(100% - 4rem);
+    width: 100%;
 }
 
 #profile table tr {
@@ -74,9 +79,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: calc(100% - 4rem);
-    height: 100%;
-    margin-bottom: 10%;
+    width: 100%;
+    padding-bottom: 10%;
 }
 
 #profile .resume-link {
