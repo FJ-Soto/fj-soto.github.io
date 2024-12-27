@@ -37,7 +37,8 @@
         <!-- Left Section: Profile with Image -->
         <div class="profile-spacer">
             <div id="profile">
-                <img src="images/ultramarathon_selfie.JPG" alt="A selfie of myself on my first ultramarathon."
+                <div id="profile-about">
+                    <img src="images/ultramarathon_selfie.JPG" alt="A selfie of myself on my first ultramarathon."
                     class="profile-photo">
                 <table id="personal-info">
                     <tbody>
@@ -63,75 +64,78 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 <!-- <p>
                     I dabble in a little bit of everything software-engineering.
                 </p> -->
-                <table id="contact-info">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="mailto:fjsoto1199@gmail.com">
-                                    <img src="images/email.png" class="icon">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mailto:fjsoto1199@gmail.com">
-                                    fjsoto1199@gmail.com
-                                </a>
-                            </td>
-                        </tr>
+                <div id="profile-contact-info">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="mailto:fjsoto1199@gmail.com">
+                                        <img src="images/email.png" class="icon">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="mailto:fjsoto1199@gmail.com">
+                                        fjsoto1199@gmail.com
+                                    </a>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <a href="tel:+12243342827">
+                                        <img src="images/phone.png" class="icon">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="tel:+12243342827">
+                                        (224) 334-2827
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://github.com/fsoto-GH">
+                                        <img src="images/github.svg" class="icon">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/fsoto-GH">
+                                        github.com/fsoto-GH
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/fsoto-li">
+                                        <img src="images/linkedIn.png" class="icon">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/fsoto-li">
+                                        linkedin.com/in/fsoto-li
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.strava.com/athletes/fjsoto"><img src="images/strava.svg"
+                                            class="icon"></a>
+                                </td>
+                                <td>
+                                    <a href="https://www.strava.com/athletes/fjsoto">
+                                        strava.com/athletes/fjsoto
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                        <tr>
-                            <td>
-                                <a href="tel:+12243342827">
-                                    <img src="images/phone.png" class="icon">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="tel:+12243342827">
-                                    (224) 334-2827
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://github.com/fsoto-GH">
-                                    <img src="images/github.svg" class="icon">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="https://github.com/fsoto-GH">
-                                    github.com/fsoto-GH
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.linkedin.com/in/fsoto-li">
-                                    <img src="images/linkedIn.png" class="icon">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="https://www.linkedin.com/in/fsoto-li">
-                                    linkedin.com/in/fsoto-li
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.strava.com/athletes/fjsoto"><img src="images/strava.svg"
-                                        class="icon"></a>
-                            </td>
-                            <td>
-                                <a href="https://www.strava.com/athletes/fjsoto">
-                                    strava.com/athletes/fjsoto
-                                </a>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <div id="resume">
+                <div id="profile-resume">
                     <table>
                         <tbody>
                             <tr>
@@ -197,10 +201,7 @@
                                             and stability. This transition reduced
                                             flakiness and accelerated automation development time, improving overall
                                             testing efficiency.</li>
-                                        <li>Investigated and resolved pipeline build failures caused by unit test
-                                            timeouts, implementing a lazy loading strategy that
-                                            improved build times by 7x and reduced build failures by 43%, enhancing
-                                            CI/CD pipeline efficiency and reliability.</li>
+                                        <li></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -261,8 +262,10 @@
                                             activity and facilitating data-driven decision-making.
                                         </li>
                                         <li>Identified and resolved two crucial bugs, leading to a 15% improvement in
-                                            page load times, significantly enhancing site
+                                            page load times, enhancing site
                                             performance and user experience.</li>
+                                        <li>Collaborated with senior engineers to analyze and document stored procedure 
+                                            usage, evaluate performance metrics, and outline deprecation strategies to support upcoming initiatives.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -369,7 +372,7 @@
                             <tr>
                                 <td class="project-images">
                                     <div>
-                                        <img class="project-image" src="images/gantt_maker/gantt_roundrobin.png"
+                                        <img class="project-image" src="images/gantt_maker/gantt_sjf.png"
                                             alt="An image of my Gantt Chart maker application, showcasing round robin with 10 processes and a quantum of 4.">
                                     </div>
                                 </td>
@@ -381,17 +384,44 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>Stock Checker</td>
+                                <td>Item Stock Checker</td>
                             </tr>
                             <tr>
-                                <td>Portable Application | Python, Tkinter</td>
+                                <td>Cross-Platform Application | Python, Tkinter, Web Scraping</td>
+                            </tr>
+                            <tr>
+                                <td class="project-description">
+                                    This project was inspired by the challenges of building a personal gaming computer during the GPU shortage caused by the COVID-19 pandemic and the bitcoin mining boom. 
+                                    At the time, GPUs were difficult to find in stock due to high demand and automated bots, and retailers like BestBuy implemented anti-bot mechanisms, making it a race for availability.                                    
+                                    
+                                    To address this, I developed a cross-platform desktop application using Python and Tkinter to streamline GPU stock tracking and automate portions of the checkout process. 
+                                    The app provided a graphical interface for checking real-time stock availability from BestBuy, leveraging Python's web scraping libraries to navigate dynamic content and stock updates.
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ul class="aligned-list">
                                         <li>
+                                            Leveraged Python's web scraping libraries to automate stock checks and assist in the checkout process, initially focused on BestBuy.
+                                        </li>
+                                        <li>
+                                            Addressed challenges like dynamic web content and bot detection mechanisms to ensure robust performance.
+                                        </li>
+                                        <li>
+                                            Explored and implemented various notification methods, ranging from basic audio alerts to advanced push notifications, ensuring timely updates.
+                                        </li>
+                                        <li>
+                                            Enhanced the application from a basic UI to a dynamic interface, enabling users to configure polling intervals and select preferred launch modes for improved flexibility and usability.
                                         </li>
                                     </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-images">
+                                    <div>
+                                        <img class="project-image" src="images/stock_checker/stock_checker.png"
+                                            alt="An image of my item stock checker application.">
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>

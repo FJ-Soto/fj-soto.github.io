@@ -41,6 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     border-left: 1px solid #303030;
+    background: #181818;
 }
 
 #main #nav-bar ul {
@@ -107,12 +108,8 @@ body {
 }
 
 #main .aligned-list li {
-    padding-left: 20px;
+    padding-left: 1.5rem;
     text-indent: -1.5rem;
-}
-
-.scrolled {
-    background: #181818;
 }
 
 #main .section {
@@ -125,7 +122,6 @@ body {
 #main .right {
     text-align: right;
 }
-
 
 #main h1,
 #main h2,
