@@ -1,5 +1,5 @@
 .project-image {
-    width: max(40vw, 40vh);
+    width: min(80%, 1080px);
     border-radius: 6px;
     border: 1px solid #b0b0b0;
 }

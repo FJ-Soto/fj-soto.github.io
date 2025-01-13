@@ -4,7 +4,6 @@
     --nav-bar-height: 3rem;
     --margin-right: 2rem;
     --margin-left: var(--margin-right);
-    --content-padding-top: 3rem;
     box-sizing: content-box;
 }
 
@@ -74,8 +73,7 @@ body {
 }
 
 #main .content {
-    padding-left: 3rem;
-    margin-top: 3rem;
+    padding-left: 2rem;
 }
 
 #main .content h1 {
@@ -114,9 +112,7 @@ body {
 
 #main .section {
     scroll-margin-top: calc(var(--nav-bar-height) + 1rem);
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-
+    margin-top: 2rem;
 }
 
 #main .right {

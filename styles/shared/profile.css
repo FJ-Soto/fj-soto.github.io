@@ -24,7 +24,7 @@
 }
 
 #profile .profile-photo {
-    margin-top: calc(var(--nav-bar-height) + var(--content-padding-top));
+    margin-top: var(--nav-bar-height);
     border-radius: 10%;
 }
 
