@@ -32,7 +32,17 @@
     width: 100%;
 }
 
-#profile table tr {
+#personal-info tr:last-child, #personal-info tr:first-child {
+    display: flex;
+    padding-top: 1em;
+} 
+
+#profile-contact-info table tr {
+    display: flex;
+    padding-top: .75rem; 
+}
+
+#profile-resume table tr {
     display: flex;
     align-items: center;
     padding-top: 1em;

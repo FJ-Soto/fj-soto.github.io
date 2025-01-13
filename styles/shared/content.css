@@ -2,7 +2,7 @@
     --profile-width: 400px;
     --content-min-width: 550px;
     --nav-bar-height: 3rem;
-    --margin-right: 5%;
+    --margin-right: 2rem;
     --margin-left: var(--margin-right);
     --content-padding-top: 3rem;
     box-sizing: content-box;
@@ -129,4 +129,9 @@ body {
 #main h4 {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
+}
+
+#main a {
+    color: #ffffff;
+    text-decoration: underline;
 }
