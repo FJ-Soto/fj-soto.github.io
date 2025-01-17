@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
+    <title>Fernando Soto | Software Engineer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Manifest for Web Apps -->
     <link rel="manifest" href="favicon_io/manifest.json" crossorigin="use-credentials">
 
-    <link rel="stylesheet" href="styles/shared/content.css">
-    <link rel="stylesheet" href="styles/shared/profile.css">
-    <link rel="stylesheet" href="styles/index/index.css">
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,6 @@
         rel="stylesheet">
 
     <script type="text/javascript" src="scripts/index.js"></script>
-    <title>Fernando Soto | Software Engineer</title>
     <!-- Favicon for general browsers -->
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="favicon_io/favicon-16x16.png" type="image/png">
@@ -30,6 +31,11 @@
     <!-- Icons for Progressive Web Apps -->
     <link rel="icon" sizes="192x192" href="favicon_io/android-chrome-192x192.png" type="image/png">
     <link rel="icon" sizes="512x512" href="favicon_io/android-chrome-512x512.png" type="image/  png">
+
+    <!-- custom styles and scripts -->
+    <link rel="stylesheet" href="styles/shared/content.css">
+    <link rel="stylesheet" href="styles/shared/profile.css">
+    <link rel="stylesheet" href="styles/index/index.css">
 </head>
 
 <body>
@@ -39,31 +45,31 @@
             <div id="profile">
                 <div id="profile-about">
                     <img src="images/ultramarathon_selfie.JPG" alt="A selfie of myself on my first ultramarathon."
-                    class="profile-photo">
-                <table id="personal-info">
-                    <tbody>
-                        <tr>
-                            <td colspan="2" class="name">
-                                <h1>Fernando J. Soto</h1>
-                            </td>
+                        class="profile-photo">
+                    <table id="personal-info">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="name">
+                                    <h1>Fernando J. Soto</h1>
+                                </td>
 
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="title">
-                                <h2>Software Engineer</h2>
-                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="title">
+                                    <h2>Software Engineer</h2>
+                                </td>
 
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="location">
-                                <h3>Chicago, IL</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="location">B.S. in Computer Science and Mathematics</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="location">
+                                    <h3>Chicago, IL</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="location">B.S. in Computer Science and Mathematics</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div id="profile-contact-info">
                     <table>
@@ -80,7 +86,7 @@
                                     </a>
                                 </td>
                             </tr>
-    
+
                             <tr>
                                 <td>
                                     <a href="tel:+12243342827">
@@ -119,7 +125,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="https://www.strava.com/athletes/fjsoto"><img src="images/strava.svg" class="icon"/>
+                                    <a href="https://www.strava.com/athletes/fjsoto"><img src="images/strava.svg"
+                                            class="icon" />
                                 </td>
                                 <td>
                                     <a href="https://www.strava.com/athletes/fjsoto">strava.com/athletes/fjsoto</a>
@@ -259,8 +266,9 @@
                                         <li>Identified and resolved two crucial bugs, leading to a 15% improvement in
                                             page load times, enhancing site
                                             performance and user experience.</li>
-                                        <li>Collaborated with senior engineers to analyze and document stored procedure 
-                                            usage, evaluate performance metrics, and outline deprecation strategies to support upcoming initiatives.</li>
+                                        <li>Collaborated with senior engineers to analyze and document stored procedure
+                                            usage, evaluate performance metrics, and outline deprecation strategies to
+                                            support upcoming initiatives.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -274,7 +282,9 @@
                     <table class="project-table">
                         <tbody>
                             <tr>
-                                <td><a href="https://github.com/fsoto-GH/Accounting" target="_blank">Personal Lending Tracker</a></td>
+                                <td><a href="https://github.com/fsoto-GH/Accounting" target="_blank">
+                                        <h3>Personal Lending Tracker</h3>
+                                    </a></td>
                             </tr>
                             <tr>
                                 <td>Full-Stack Application | SQL, C#, RESTful API, React</td>
@@ -316,9 +326,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="project-images">
-                                    <img class="project-image" src="images/accounting/web_view.png"
-                                        alt="An image of the most recent iteration on my personal lending app, a React-based web application.">
+                                <td class="project-images picture-thumbnails">
+                                    <a href="images/accounting/app_view.png">
+                                        <img class="project-image" src="images/accounting/app_view.png"
+                                            alt="An image of the most recent iteration on my personal lending app, a React-based web application.">
+                                    </a>
+                                    <a href="images/accounting/web_view.png">
+                                        <img class="project-image" src="images/accounting/web_view.png"
+                                            alt="An image of the most recent iteration on my personal lending app, a React-based web application.">
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
@@ -330,7 +346,9 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td><a href="https://github.com/fsoto-GH/GanttChartMaker-v2.0" target="_blank">Chart Maker</a></td>
+                                <td><a href="https://github.com/fsoto-GH/GanttChartMaker-v2.0" target="_blank">
+                                        <h3>Chart Maker</h3>
+                                    </a></td>
                             </tr>
                             <tr>
                                 <td>Windows Form Application | C#</td>
@@ -363,9 +381,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="project-images">
-                                    <img class="project-image" src="images/gantt_maker/gantt_sjf.png"
-                                        alt="An image of my Gantt Chart maker application, showcasing round robin with 10 processes and a quantum of 4.">
+                                <td class="project-images picture-thumbnails">
+                                    <a href="images/gantt_maker/gantt_sjf.png">
+                                        <img class="project-image" src="images/gantt_maker/gantt_sjf.png"
+                                            alt="An image of my Gantt Chart maker application, showcasing round robin with 10 processes and a quantum of 4.">
+                                    </a>
+                                    <a href="images/gantt_maker/gantt_roundrobin.png">
+                                        <img class="project-image" src="images/gantt_maker/gantt_roundrobin.png">
+                                    </a>
+                                    <a href="images/gantt_maker/gantt_priority.png">
+                                        <img class="project-image" src="images/gantt_maker/gantt_priority.png">
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
@@ -375,41 +401,103 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>Item Stock Checker</td>
+                                <td>
+                                    <h3>Item Stock Checker</h3>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Cross-Platform Application | Python, Tkinter, Web Scraping</td>
                             </tr>
                             <tr>
                                 <td class="project-description">
-                                    This project was inspired by the challenges of building a personal gaming computer during the GPU shortage caused by the COVID-19 pandemic and the bitcoin mining boom. 
-                                    At the time, GPUs were difficult to find in stock due to high demand and automated bots, and retailers like BestBuy implemented anti-bot mechanisms, making it a race for availability.                                    
-                                    
-                                    To address this, I developed a cross-platform desktop application using Python and Tkinter to streamline GPU stock tracking and automate portions of the checkout process. 
-                                    The app provided a graphical interface for checking real-time stock availability from BestBuy, leveraging Python's web scraping libraries to navigate dynamic content and stock updates.
+                                    This project was inspired by the challenges of building a personal gaming computer
+                                    during the GPU shortage caused by the COVID-19 pandemic and the bitcoin mining boom.
+                                    At the time, GPUs were difficult to find in stock due to high demand and automated
+                                    bots, and retailers like BestBuy implemented anti-bot mechanisms, making it a race
+                                    for availability.
+
+                                    To address this, I developed a cross-platform desktop application using Python and
+                                    Tkinter to streamline GPU stock tracking and automate portions of the checkout
+                                    process.
+                                    The app provided a graphical interface for checking real-time stock availability
+                                    from BestBuy, leveraging Python's web scraping libraries to navigate dynamic content
+                                    and stock updates.
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ul class="aligned-list">
                                         <li>
-                                            Leveraged Python's web scraping libraries to automate stock checks and assist in the checkout process, initially focused on BestBuy.
+                                            Leveraged Python's web scraping libraries to automate stock checks and
+                                            assist in the checkout process, initially focused on BestBuy.
                                         </li>
                                         <li>
-                                            Addressed challenges like dynamic web content and bot detection mechanisms to ensure robust performance.
+                                            Addressed challenges like dynamic web content and bot detection mechanisms
+                                            to ensure robust performance.
                                         </li>
                                         <li>
-                                            Explored and implemented various notification methods, ranging from basic audio alerts to advanced push notifications, ensuring timely updates.
+                                            Explored and implemented various notification methods, ranging from basic
+                                            audio alerts to advanced push notifications, ensuring timely updates.
                                         </li>
                                         <li>
-                                            Enhanced the application from a basic UI to a dynamic interface, enabling users to configure polling intervals and select preferred launch modes for improved flexibility and usability.
+                                            Enhanced the application from a basic UI to a dynamic interface, enabling
+                                            users to configure polling intervals and select preferred launch modes for
+                                            improved flexibility and usability.
                                         </li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="project-images">
-                                    <img class="project-image" src="images/stock_checker/stock_checker.png"
+                                    <a href="images/stock_checker/stock_checker.png">
+                                        <img class="project-image" src="images/stock_checker/stock_checker.png"
+                                            alt="An image of my item stock checker application.">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- #endregion -->
+                    <!-- #region project #4 -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Statement Generator</td>
+                            </tr>
+                            <tr>
+                                <td>Windows Form Application | C#, Python, Web Scraping</td>
+                            </tr>
+                            <tr>
+                                <td class="project-description">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="aligned-list">
+                                        <li>
+                                            Leveraged Python's web scraping libraries to automate stock checks and
+                                            assist in the checkout process, initially focused on BestBuy.
+                                        </li>
+                                        <li>
+                                            Addressed challenges like dynamic web content and bot detection mechanisms
+                                            to ensure robust performance.
+                                        </li>
+                                        <li>
+                                            Explored and implemented various notification methods, ranging from basic
+                                            audio alerts to advanced push notifications, ensuring timely updates.
+                                        </li>
+                                        <li>
+                                            Enhanced the application from a basic UI to a dynamic interface, enabling
+                                            users to configure polling intervals and select preferred launch modes for
+                                            improved flexibility and usability.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-images">
+                                    <img class="project-image" src="images/statement_generator/app_view.png"
                                         alt="An image of my item stock checker application.">
                                 </td>
                             </tr>
@@ -418,8 +506,7 @@
                     <!-- #endregion -->
                 </div>
             </div>
-    </div>
-    </main>
+        </main>
     </div>
 </body>
 
