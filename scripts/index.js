@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // group project pictures into a gallery
   for (let i = 1; i <= project_pic_class.length; i++) {
-    Fancybox.bind(`#projects table:nth-of-type(${i}) ${project_pic_class} a`, {
-      groupAll: true,
-    });
+    Fancybox.bind(
+      `#projects table:nth-of-type(${i}) ${project_pic_class} img`,
+      {
+        groupAll: true,
+      }
+    );
   }
 });

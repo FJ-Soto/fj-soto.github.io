@@ -138,7 +138,11 @@ body {
 
 .project-image {
     border-radius: 6px;
-    border: 1px solid 181818;
+    border: 1px solid #181818;
+}
+
+.project-image:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .project-description {
@@ -146,10 +150,22 @@ body {
 }
 
 
-.picture-thumbnails {    
+.project-images {    
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.no-uniform {    
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.no-uniform .project-image {
+    padding-right: 1.5rem;
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -161,16 +177,16 @@ body {
   }
   
   /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 768px) and (max-width: 1032px) {
     .project-image {
-        max-width: 100%;
+        max-width: 90%;
     }
   }
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1200px) {
     .project-image {
-        max-width: 70%;
+        max-width: 55%;
     }
   }
   
