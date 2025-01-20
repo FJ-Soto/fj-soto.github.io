@@ -1,5 +1,5 @@
 :root {
-    --profile-width: 400px;
+    --profile-width: 375px;
     --content-min-width: 550px;
     --nav-bar-height: 3rem;
     --margin-right: 2rem;
@@ -30,6 +30,18 @@ body {
     min-width: var(--content-min-width);
     line-height: 1.4rem;
     padding-right: var(--margin-right);
+}
+
+#main p {
+    padding-top: 1rem;
+}
+
+#main p.no-top {
+    padding-top: initial;
+}
+
+#main .bold {
+    font-weight: bold;
 }
 
 #main #nav-bar {
@@ -86,10 +98,6 @@ body {
     margin-bottom: .8rem;
 }
 
-#main .content p {
-    color: #cccccc;
-}
-
 #main .content table {
     width: 100%;
     margin-bottom: 2rem;
@@ -111,7 +119,7 @@ body {
 }
 
 #main .section {
-    scroll-margin-top: calc(var(--nav-bar-height) + 1rem);
+    scroll-margin-top: calc(var(--nav-bar-height) + 2rem);
     margin-top: 2rem;
 }
 
@@ -150,50 +158,56 @@ body {
 }
 
 
-.project-images {    
+.project-images {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     margin-left: 1.5rem;
 }
 
-.no-uniform {    
-    display: flex;
-    margin-left: 1.5rem;
-    flex-direction: row;
-    align-items: flex-start;
+#accomplishments {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.no-uniform .project-image {
-    padding-right: 1.5rem;
+#accomplishments dt {
+    display: block;
+}
+
+#accomplishments dd {
+    display: block;
+    margin-left: 40px;
 }
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
+
     /* Styles for phones */
     .project-image {
         max-width: 100%;
     }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 1032px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1032px) {
     .project-image {
         max-width: 90%;
     }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
     .project-image {
         max-width: 55%;
     }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     .project-image {
         max-width: 45%;
     }
-  }
-  
+}
