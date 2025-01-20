@@ -100,7 +100,10 @@ body {
 
 #main .content table {
     width: 100%;
-    margin-bottom: 2rem;
+}
+
+#work-experience table:not(:last-child), #projects table:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 #main ul li {
@@ -174,7 +177,7 @@ body {
 }
 
 #accomplishments dt {
-    display: block;
+    margin-top: 1rem;
 }
 
 #accomplishments dd {
@@ -208,6 +211,6 @@ body {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .project-image {
-        max-width: 45%;
+        max-width: min(70%, 800px);
     }
 }
