@@ -22,6 +22,8 @@ const smoothScrollRelativeLinks = () => {
       document.querySelector(this.getAttribute("href")).scrollIntoView({
         behavior: "smooth",
       });
+
+      document.location = `${this.getAttribute("href")}`;
     });
   });
 };
