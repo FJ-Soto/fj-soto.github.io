@@ -1,6 +1,6 @@
 @media (max-width: 1020px) {
     .nav-bar {
-        background-color: #202020 ;
+        background-color: #202020 !important;
         z-index: 100;
         margin-left: 0 !important;
         width: 100% !important;
