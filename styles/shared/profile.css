@@ -15,14 +15,15 @@
     overflow-y: auto;
     -webkit-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);}
+    transform: translate3d(0, 0, 0);
+}
 
 #profile {
-    padding-right: 2rem;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    padding: 0 2rem 2rem 0;
 }
 
 #profile .profile-photo {
@@ -93,7 +94,6 @@
     align-items: center;
     align-items: flex-end;
     width: 100%;
-    padding-bottom: 1rem;
 }
 
 #profile .resume-link {
@@ -105,28 +105,37 @@
     color: #cccccc;
 }
 
-#profile h4 {
+#profile h4, #profile h5, #profile h6 {
     font-weight: normal;
     font-size: 1rem;
 }
 
-@media (max-width: 1020px) {   
-    #profile div {
-        padding-top: 3rem !important;
+@media (max-width: 1020px) {
+    #contact {
+        height: 100vh;
     }
 
-    #profile, #contact, #main, #profile {
+    #contact {
+        min-height: 100vh;
+    }
+
+    #profile-about {
+        box-sizing: content-box;
+    }
+
+    #main {
         padding: 2rem;
         border: none;
         box-sizing: border-box;
     }
-    
+
     #contact {
         display: flex !important;
         position: relative !important;
         width: 100% !important;
-        min-height: 100vh;
         justify-content: space-around;
+        padding-left: 0 !important;
+        border: none !important;
     }
 
 
@@ -138,6 +147,8 @@
     #profile {
         display: flex;
         justify-content: space-between;
+        padding: 3rem 2rem 2rem 2rem !important;
+        align-content: center;
     }
 
     
@@ -176,10 +187,6 @@
 @media (max-width: 600px) {    
     #profile .profile-photo {
         width: 100%;
-    }
-
-    #profile {
-        min-height: 100vh;
     }
 
     #profile #profile-about {

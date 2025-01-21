@@ -184,6 +184,10 @@ body {
         margin-left: 0;
     }
 
+    #welcome {
+        margin-top: 0 !important;
+    }
+
     #main #content {
         padding: 0;
     }
