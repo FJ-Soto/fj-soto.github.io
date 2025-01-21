@@ -1,8 +1,7 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
+const bindPictures = () => {
   const project_pic_class = ".project-images";
-  const projects = document.querySelectorAll(project_pic_class);
 
   // group project pictures into a gallery
   for (let i = 1; i <= project_pic_class.length; i++) {
@@ -13,4 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
   }
+};
+
+const smoothScrollRelativeLinks = () => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  bindPictures();
+  smoothScrollRelativeLinks();
 });

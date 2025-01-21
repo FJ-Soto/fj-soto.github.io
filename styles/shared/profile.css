@@ -1,5 +1,5 @@
 /* Profile main */
-.profile-spacer {
+#contact {
     height: 100%;
     background-color: #202020;
     border-right: 1px solid #303030;
@@ -45,9 +45,7 @@
 }
 
 #profile-resume table tr {
-    display: flex;
-    align-items: center;
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 #profile .name,
@@ -110,4 +108,101 @@
 #profile h4 {
     font-weight: normal;
     font-size: 1rem;
+}
+
+@media (max-width: 1020px) {   
+    #profile div {
+        padding-top: 3rem !important;
+    }
+
+    #profile, #contact, #main, #profile {
+        padding: 2rem;
+        border: none;
+        box-sizing: border-box;
+    }
+    
+    #contact {
+        display: flex !important;
+        position: relative !important;
+        width: 100% !important;
+        min-height: 100vh;
+        justify-content: space-around;
+    }
+
+
+    #profile .profile-photo {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    #profile #profile-about {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #profile #profile-about #personal-info {
+        padding-right: 1rem;
+    }
+
+    #profile-contact-info {
+        padding-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #main {
+        min-width: 100%;
+    }
+
+    #profile #profile-resume {
+        padding-top: 0;
+    }
+
+    #personal-info tr:last-child, #personal-info tr:first-child {
+        padding-top: 0;
+    }
+}
+
+
+@media (max-width: 600px) {    
+    #profile .profile-photo {
+        width: 100%;
+    }
+
+    #profile {
+        min-height: 100vh;
+    }
+
+    #profile #profile-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile #profile-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #profile #profile-about #personal-info {
+        padding-top: 1rem;
+    }
+
+    #profile .profile-photo {
+        padding-right: 0;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+    }
 }

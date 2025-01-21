@@ -4,6 +4,8 @@
     --nav-bar-height: 3rem;
     --margin-right: 2rem;
     --margin-left: var(--margin-right);
+    /* Size at which to collapse sidebar */
+    --page-break: 1020px;
     box-sizing: content-box;
 }
 
@@ -44,61 +46,22 @@ body {
     font-weight: bold;
 }
 
-#main #nav-bar {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    height: var(--nav-bar-height);
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid #303030;
-    background: #181818;
-}
-
-#main #nav-bar ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none;
-    height: 100%;
-}
-
-#main #nav-bar ul li {
-    margin-left: 4rem;
-}
-
-
-#main #nav-bar a {
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
-}
-
-#main #nav-bar a {
-    color: #b0b0b0;
-    text-decoration: none;
-}
-
-#main #nav-bar a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#main .content {
+#main #content {
     padding-left: 2rem;
+    padding-top: var(--nav-bar-height);
 }
 
-#main .content h1 {
+#main #content h1 {
     color: #ffffff;
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-#main .content h2 {
+#main #content h2 {
     margin-bottom: .8rem;
 }
 
-#main .content table {
+#main #content table {
     width: 100%;
 }
 
@@ -186,11 +149,11 @@ body {
 }
 
 /* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
 
     /* Styles for phones */
     .project-image {
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 
@@ -212,5 +175,16 @@ body {
 @media (min-width: 1200px) {
     .project-image {
         max-width: min(70%, 800px);
+    }
+}
+
+@media (max-width: 1020px) {    
+    #main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #main #content {
+        padding: 0;
     }
 }
