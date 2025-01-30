@@ -11,6 +11,10 @@
     .hide-when-big {
         display: none !important;
     }
+    
+    .nav-bar ul li {
+        margin-right: 4rem !important;
+    }
 }
 
 .nav-bar {
